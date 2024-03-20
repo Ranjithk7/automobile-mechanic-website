@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/maintenance.css">
+    <title>Preventive Maintenance Services</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">AutoMob-Mechanic</a></li>
+            <li class="hideonmob"><a href="services.html">services</a></li>
+            <li class="hideonmob"><a href="booking.html">Booking</a></li>
+            <li class="hideonmob"><a href="mailto:contact@automob.co.in">contact@automob.co.in&#x2709;</a></li>
+            <li class="hideonmob"><a href="tel:999 999 9999">999 999 9999&phone;</a></li>
+            <li class="menubtn" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="mailto:contact@automob.co.in">contact Via Email</a></li>
+            <li><a href="tel:999 999 9999">Call us</a></li>
+        </ul>
+    </nav>
+    <div class="background"></div>
+    <div class="container container1">
+        <div class="img"><img src="../images/preventive-measures.jpg" alt="oops"></div>
+        <div class="content">
+            <div class="menubar">
+                <a href="home.html">home</a> / <a href="services.html">services</a> / <a href="#">preventive maintenance service</a>
+            </div>
+            <h3>preventive maintenance</h3>
+            <h4>Save: 35%</h4>
+            <p>Looking to keep your car functioning smoothy?<br> money and opt for our AutoMob-Mechanic's periodic maitenance services.</p>
+            <ul class="aims"><p>This service aims at:</p>
+                <li>Air filter replacement</li>
+                <li>Engine oil replacement</li>
+                <li>Break pad clening</li>
+            </ul>
+            <strong>Offer Price:</strong><del> $50</del> <span>$40</span>
+            <div class="btn">
+                <button><a href="booking.html">Book Service</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2020 AutoMob-Mechanic. All rights reserved</p>
+    </footer>
+    <script>
+        function showsidebar(){
+            document.querySelector(".sidebar").style.display="flex";
+        }
+        function hidesidebar(){
+            document.querySelector(".sidebar").style.display="none";
+        }
+    </script>
+</body>
+</html>

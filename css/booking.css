@@ -1,0 +1,174 @@
+@font-face {
+    font-family: myfont;
+    src: url("../font/Montserrat-Medium.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "myfont";
+}
+nav{
+    width: 100%;
+    background: #065371;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style:none;
+}
+ul li{
+    height: 8vh;
+}
+li a{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+ul li:first-child{
+    margin-right: auto;
+}
+ul a:hover{
+    background-color: #F5496C;
+}
+ul li:first-child a:hover{
+    background: none;
+}
+.menubtn{
+    display: none;
+}
+/* side bar */
+.sidebar{
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255,.2);
+    z-index: 99;
+    box-shadow: -5px 0px 10px rgb(34, 34, 34);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+} 
+.sidebar{
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+@media(max-width: 500px){
+    .hideonmob{
+        display: none;
+    }
+    .menubtn{
+        display: flex;
+    }
+    .container{
+        width: 50% !important;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration:3px underline #065371 ;
+}
+h2 span{
+    color: #F5496C;
+}
+.container{
+    margin-top: 1em;    
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.container .form{
+    height: 100%;
+    width: 50%;
+}
+.container .img{
+    width: 30%;
+    height: 55%;
+    margin-bottom: 200px;
+    margin-right: 150px;
+}
+.container .form form input[type=text],input[type=number],input[type=email],select,select option{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 27px;
+    border-radius: 2px;
+    border: 1px solid rgb(135, 131, 131);
+}
+.form input[type=radio]{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.form .code select,select option{
+    width:15%;
+}
+.form .code input{
+    width: 84%;
+}
+
+.form form label{
+    margin-bottom: 30px;
+}
+.form .tell{
+    border: 3px solid #065371;
+    width: 80%;
+}
+.form form *{
+    margin-bottom: 5px;
+}
+
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.form input[type=submit]{
+    text-transform: capitalize;
+    border: none;
+    background-color: #F5496C;
+    color: white;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin: 0 auto;
+    display: grid;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 30px;
+}
+
+footer{
+    background-color:#065371; 
+    color: white;
+    height: 6vh;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem ;
+}

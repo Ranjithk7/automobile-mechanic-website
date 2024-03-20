@@ -1,0 +1,133 @@
+@font-face {
+    font-family: myfont;
+    src: url("../font/Montserrat-Medium.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "myfont";
+}
+nav{
+    width: 100%;
+    background: #065371;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style:none;
+}
+ul li{
+    height: 8vh;
+}
+li a{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+ul li:first-child{
+    margin-right: auto;
+}
+ul a:hover{
+    background-color: #F5496C;
+}
+ul li:first-child a:hover{
+    background: none;
+}
+.menubtn{
+    display: none;
+}
+/* side bar */
+.sidebar{
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255,.2);
+    z-index: 99;
+    box-shadow: -5px 0px 10px rgb(34, 34, 34);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    transition:all 2s ease;
+} 
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    color: black;
+    width: 100%;
+}
+@media(max-width: 500px){
+    .hideonmob{
+        display: none;
+    }
+    .menubtn{
+        display: flex;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .service .img{
+        margin-top: 10px;
+    }
+}
+.title{
+    text-align: center;
+    margin: 30px 25px;
+    line-height: 1.5;
+}
+.title h1{
+    text-decoration: underline #065371;
+    margin-bottom: 10px;
+}
+.title span{
+    color: #F5496C;
+}
+.service{
+    display:flex;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.service .img a{
+    text-decoration: none;
+    margin: 0 7px;
+    display: block;
+}
+.img a p{
+    padding: 0 44px 10px;
+    color: black;
+}
+.img h3{
+    font-weight: bold;
+    color: black;
+    margin-bottom:6px;
+}
+.service .img a:hover{
+    box-shadow: 0px 1px 3px gray;
+}
+footer{
+    background-color:#065371; 
+    color: white;
+    height: 6vh;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem ;
+}

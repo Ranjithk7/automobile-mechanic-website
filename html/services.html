@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../css/service.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">AutoMob-Mechanic</a></li>
+            <li class="hideonmob"><a href="services.html">services</a></li>
+            <li class="hideonmob"><a href="booking.html">Booking</a></li>
+            <li class="hideonmob"><a href="mailto:contact@automob.co.in">contact@automob.co.in&#x2709;</a></li>
+            <li class="hideonmob"><a href="tel:999 999 9999">999 999 9999&phone;</a></li>
+            <li class="menubtn" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="mailto:contact@automob.co.in">contact Via Email</a></li>
+            <li><a href="tel:999 999 9999">Call us</a></li>
+        </ul>
+    </nav>
+    <div class="title">
+        <h1>Our <span>Services</span></h1>
+        <p>Our representatives are professionaly trained and skilled with latest and futursitic techniques to provide a best quality service. At AutoMob-Mechanic, we provide a high class service to the customers for their happy and memorable driving experience.</p>
+    </div>
+    <div class="service">
+        <div class="img">
+            <a href="maintenance.html">
+                <img src="../images/preventive-card.jpg" alt="oops" width="300px" height="200px">
+                <h3>Preventive Maintenance</h3>
+                <p>Periodically check and kepp your car cleaning</p>    
+            </a>
+        </div>
+        <div class="img">
+            <a href="body_repair.html">
+                <img src="../images/body-repair-card.jpg" alt="oops" width="300px" height="200px">
+                <h3>Body Repair</h3>
+                <p>Full chasis body repair provided by the experts</p>
+            </a>
+    
+        </div>
+        <div class="img">
+            <a href="car_care.html">
+                <img src="../images/car-care-card.jpg" alt="oops" width="300px" height="200px">
+                <h3>Car Care</h3>
+                <p>Get your sparkling clean in just a minute</p>
+            </a>
+        </div>
+    </div>    
+    <footer>
+        <p>Copyright &copy; 2020 AutoMob-Mechanic. All rights reserved</p>
+    </footer>
+    <script>
+        function showsidebar(){
+            document.querySelector(".sidebar").style.display="flex";
+        }
+        function hidesidebar(){
+            document.querySelector(".sidebar").style.display="none";
+        }
+    </script>
+</body>
+</html>
